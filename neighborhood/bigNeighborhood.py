@@ -47,8 +47,8 @@ def neighborhood(file1, newFile):
 
 
 def main():
-    numbers1 = open("numbers1.txt", "r")
-    numbers2 = open("numbers2.txt", "r")
+    numbers1 = open(os.path.dirname(__file__) + "/../datasets/numbers1.txt", "r")
+    numbers2 = open(os.path.dirname(__file__) + "/../datasets/numbers2.txt", "r")
     newFile3 = open("summary_1.txt", "w")
     newFile2 = open("summary_2.txt", "w")
     neighborhood(numbers1, newFile3)

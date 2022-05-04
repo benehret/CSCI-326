@@ -16,7 +16,7 @@ def neighborhood(file1, newFile, distance):
 
     for i in lyst:
         for j in lyst:
-            if math.sqrt(((int(j[0]) - int(i[0]))**2 + (int(j[1]) - int(i[1]))**2)) <= int(distance):
+            if math.sqrt(((int(j[0]) - int(i[0]))**2 + (int(j[1]) - int(i[1]))**2)+(int(j[2]) - int(i[2]))**2) <= int(distance):
                 if j!= i:
                     lyst.pop(lyst.index(j))   
         lystCover.append(i)
